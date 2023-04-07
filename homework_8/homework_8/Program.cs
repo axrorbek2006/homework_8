@@ -10,15 +10,13 @@
             int numy = Convert.ToInt32(Console.ReadLine());
             minAndMax(ref numx, ref numy);  
         }
-        static int minAndMax(ref int numx , ref int numy)
+        static void minAndMax(ref int numx , ref int numy)
         {
             int x = numx, y = numy;
             numx = Math.Max(x, y);
             numy = Math.Min(x, y);
-            Console.WriteLine($" Max : {numx} ");
-            Console.WriteLine($" Min : {numy} ");
-
-            return numx;
+            Console.WriteLine($" Max X : {numx} ");
+            Console.WriteLine($" Min Y : {numy} ");
         }
         
     }
